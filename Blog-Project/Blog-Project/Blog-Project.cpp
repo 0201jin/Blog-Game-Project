@@ -83,7 +83,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 			deltaTime = duration_cast<ms>(FPS).count() * 0.001;
 
 			//여기가 메인 루프
-			cout << FPS.count() << endl;
 		}
 	}
 
