@@ -129,11 +129,13 @@
   <ItemGroup>
     <ClInclude Include="Blog-Project.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Mgr\UInputMgr.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Blog-Project.cpp" />
+    <ClCompile Include="Mgr\UInputMgr.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Blog-Project.rc" />

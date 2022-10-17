@@ -8,6 +8,8 @@
 #include <cstdint>
 #include "Blog-Project.h"
 
+#include "Mgr/UInputMgr.h"
+
 const int fps = 60;
 
 using namespace std;
@@ -71,6 +73,12 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	time_point<steady_clock> fpsTimer(steady_clock::now());
 	frame FPS{};
 
+	RECT rect;
+	GetClientRect(Hwnd, &rect);
+	UInputMgr* inputmgr = UInputMgr::GetInst();
+	inputmgr->Init(hInst, Hwnd, rect.right - rect.left, rect.bottom - rect.top);
+	float x, y;
+
 	while (msg.message != WM_QUIT)
 	{
 		FPS = duration_cast<frame>(steady_clock::now() - fpsTimer);
@@ -83,6 +91,10 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 			deltaTime = duration_cast<ms>(FPS).count() * 0.001;
 
 			//여기가 메인 루프
+			inputmgr->Frame();
+			inputmgr->GetMouseMove(x, y);
+
+			cout << x << " " << y << endl;
 		}
 	}
 

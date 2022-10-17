@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\Msg">
+      <UniqueIdentifier>{16eb8729-fb0c-4645-9918-f21fd9704a39}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -27,10 +30,16 @@
     <ClInclude Include="Blog-Project.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Mgr\UInputMgr.h">
+      <Filter>소스 파일\Msg</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Blog-Project.cpp">
       <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Mgr\UInputMgr.cpp">
+      <Filter>소스 파일\Msg</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
