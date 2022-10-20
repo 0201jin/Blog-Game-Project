@@ -13,8 +13,20 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="소스 파일\Msg">
+    <Filter Include="소스 파일\Mgr">
       <UniqueIdentifier>{16eb8729-fb0c-4645-9918-f21fd9704a39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Mgr\InputMgr">
+      <UniqueIdentifier>{e8b85824-d86a-4979-a822-ee5f8997a552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Mgr\StateMgr">
+      <UniqueIdentifier>{37a24a2b-1d56-4bff-ae62-ff625483f0c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\State">
+      <UniqueIdentifier>{b844c5b8-7e95-4472-bf97-c93c9de173c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Main">
+      <UniqueIdentifier>{127d17b1-584c-49fb-8d48-4f9475e95bd3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -31,7 +43,19 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Mgr\UInputMgr.h">
-      <Filter>소스 파일\Msg</Filter>
+      <Filter>소스 파일\Mgr\InputMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Mgr\UStateMgr.h">
+      <Filter>소스 파일\Mgr\StateMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="Mgr\UState.h">
+      <Filter>소스 파일\Mgr\StateMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="State\MainState.h">
+      <Filter>소스 파일\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Main.h">
+      <Filter>소스 파일\Main</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -39,7 +63,19 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Mgr\UInputMgr.cpp">
-      <Filter>소스 파일\Msg</Filter>
+      <Filter>소스 파일\Mgr\InputMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Mgr\UStateMgr.cpp">
+      <Filter>소스 파일\Mgr\StateMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Mgr\UState.cpp">
+      <Filter>소스 파일\Mgr\StateMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="State\MainState.cpp">
+      <Filter>소스 파일\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Main.cpp">
+      <Filter>소스 파일\Main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

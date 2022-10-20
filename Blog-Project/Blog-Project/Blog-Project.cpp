@@ -9,6 +9,7 @@
 #include "Blog-Project.h"
 
 #include "Mgr/UInputMgr.h"
+#include "Main/Main.h"
 
 const int fps = 60;
 
@@ -68,16 +69,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 	msg.message = WM_NULL;
 
 	// 기본 메시지 루프입니다:
+	Main* MainClass = new Main(Hwnd, hInst);
 
 	float deltaTime = 0.0f;
 	time_point<steady_clock> fpsTimer(steady_clock::now());
 	frame FPS{};
-
-	RECT rect;
-	GetClientRect(Hwnd, &rect);
-	UInputMgr* inputmgr = UInputMgr::GetInst();
-	inputmgr->Init(hInst, Hwnd, rect.right - rect.left, rect.bottom - rect.top);
-	float x, y;
 
 	while (msg.message != WM_QUIT)
 	{
@@ -91,10 +87,8 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 			deltaTime = duration_cast<ms>(FPS).count() * 0.001;
 
 			//여기가 메인 루프
-			inputmgr->Frame();
-			inputmgr->GetMouseMove(x, y);
-
-			cout << x << " " << y << endl;
+			MainClass->Update(deltaTime);
+			MainClass->Render(deltaTime);
 		}
 	}
 

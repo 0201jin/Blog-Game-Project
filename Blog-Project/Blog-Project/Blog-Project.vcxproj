@@ -129,13 +129,21 @@
   <ItemGroup>
     <ClInclude Include="Blog-Project.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="Main\Main.h" />
     <ClInclude Include="Mgr\UInputMgr.h" />
+    <ClInclude Include="Mgr\UState.h" />
+    <ClInclude Include="Mgr\UStateMgr.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="State\MainState.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Blog-Project.cpp" />
+    <ClCompile Include="Main\Main.cpp" />
     <ClCompile Include="Mgr\UInputMgr.cpp" />
+    <ClCompile Include="Mgr\UState.cpp" />
+    <ClCompile Include="Mgr\UStateMgr.cpp" />
+    <ClCompile Include="State\MainState.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Blog-Project.rc" />
