@@ -28,6 +28,9 @@
     <Filter Include="소스 파일\Main">
       <UniqueIdentifier>{127d17b1-584c-49fb-8d48-4f9475e95bd3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Mgr\ResourceMgr">
+      <UniqueIdentifier>{fec6e950-0c6e-4410-b240-3589b3e321d5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -57,6 +60,12 @@
     <ClInclude Include="Main\Main.h">
       <Filter>소스 파일\Main</Filter>
     </ClInclude>
+    <ClInclude Include="Mgr\UResourceMgr.h">
+      <Filter>소스 파일\Mgr\ResourceMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ExternHeader.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Blog-Project.cpp">
@@ -76,6 +85,9 @@
     </ClCompile>
     <ClCompile Include="Main\Main.cpp">
       <Filter>소스 파일\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Mgr\UResourceMgr.cpp">
+      <Filter>소스 파일\Mgr\ResourceMgr</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
