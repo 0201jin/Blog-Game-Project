@@ -31,6 +31,9 @@
     <Filter Include="소스 파일\Mgr\ResourceMgr">
       <UniqueIdentifier>{fec6e950-0c6e-4410-b240-3589b3e321d5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Mgr\DrawFactory">
+      <UniqueIdentifier>{b8752b8b-daad-4244-aac0-066eeafd699d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -66,6 +69,12 @@
     <ClInclude Include="ExternHeader.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Mgr\UDrawFactory.h">
+      <Filter>소스 파일\Mgr\DrawFactory</Filter>
+    </ClInclude>
+    <ClInclude Include="Mgr\SpriteSheet.h">
+      <Filter>소스 파일\Mgr\DrawFactory</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Blog-Project.cpp">
@@ -88,6 +97,12 @@
     </ClCompile>
     <ClCompile Include="Mgr\UResourceMgr.cpp">
       <Filter>소스 파일\Mgr\ResourceMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Mgr\UDrawFactory.cpp">
+      <Filter>소스 파일\Mgr\DrawFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Mgr\SpriteSheet.cpp">
+      <Filter>소스 파일\Mgr\DrawFactory</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

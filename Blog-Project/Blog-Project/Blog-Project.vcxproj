@@ -131,6 +131,8 @@
     <ClInclude Include="ExternHeader.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Main\Main.h" />
+    <ClInclude Include="Mgr\SpriteSheet.h" />
+    <ClInclude Include="Mgr\UDrawFactory.h" />
     <ClInclude Include="Mgr\UInputMgr.h" />
     <ClInclude Include="Mgr\UResourceMgr.h" />
     <ClInclude Include="Mgr\UState.h" />
@@ -142,6 +144,8 @@
   <ItemGroup>
     <ClCompile Include="Blog-Project.cpp" />
     <ClCompile Include="Main\Main.cpp" />
+    <ClCompile Include="Mgr\SpriteSheet.cpp" />
+    <ClCompile Include="Mgr\UDrawFactory.cpp" />
     <ClCompile Include="Mgr\UInputMgr.cpp" />
     <ClCompile Include="Mgr\UResourceMgr.cpp" />
     <ClCompile Include="Mgr\UState.cpp" />
