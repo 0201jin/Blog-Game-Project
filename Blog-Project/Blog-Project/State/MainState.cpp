@@ -16,7 +16,10 @@ void MainState::Init()
 	ResourceMgr = new UResourceMgr();
 
 	DrawFactory = new UDrawFactory;
-	DrawFactory->AddSprite(new SpriteSheet(ResourceMgr->GetTexture("character"), {512, 512}, {0, 0}, {288, 240}, {0, 0}));
+
+	SpriteSheet* sprite = new SpriteSheet(ResourceMgr->GetTexture("character"), { 512, 512 }, { 48, 48 }, { 6, 6, 4, 0, 3 });
+	DrawFactory->AddSprite(sprite);
+	sprite->SetAction(1);
 }
 
 void MainState::Update(float _deltaTime)

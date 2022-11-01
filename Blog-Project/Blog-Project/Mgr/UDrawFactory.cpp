@@ -16,7 +16,16 @@ void UDrawFactory::Render(float _deltaTime)
 {
 	for (vector<SpriteSheet*>::iterator it = vSpriteSheet.begin(); it != vSpriteSheet.end(); it++)
 	{
-		(*it)->Draw();
+		switch ((*it)->GetRenderType())
+		{
+		case 0:
+			(*it)->Draw();
+			break;
+
+		case 1:
+			(*it)->Draw(_deltaTime);
+			break;
+		}
 	}
 }
 
