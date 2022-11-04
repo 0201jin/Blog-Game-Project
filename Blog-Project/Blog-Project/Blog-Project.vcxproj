@@ -128,6 +128,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Blog-Project.h" />
+    <ClInclude Include="Class\UClass\UClass.h" />
+    <ClInclude Include="Class\UWorld\UWorld.h" />
     <ClInclude Include="ExternHeader.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Main\Main.h" />
@@ -143,6 +145,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Blog-Project.cpp" />
+    <ClCompile Include="Class\UClass\UClass.cpp" />
+    <ClCompile Include="Class\UWorld\UWorld.cpp" />
     <ClCompile Include="Main\Main.cpp" />
     <ClCompile Include="Mgr\SpriteSheet.cpp" />
     <ClCompile Include="Mgr\UDrawFactory.cpp" />

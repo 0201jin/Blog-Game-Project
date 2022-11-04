@@ -23,7 +23,7 @@ public:
 	{ 
 		iAction = _action;
 
-		if (vLineMaxFrame.size() >= iAction)
+		if (vLineMaxFrame.size() > iAction)
 		{
 			iMaxFrame = vLineMaxFrame[iAction];
 		}

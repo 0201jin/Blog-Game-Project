@@ -34,6 +34,15 @@
     <Filter Include="소스 파일\Mgr\DrawFactory">
       <UniqueIdentifier>{b8752b8b-daad-4244-aac0-066eeafd699d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Class">
+      <UniqueIdentifier>{d5554142-2bd7-435d-b70c-1b05a7baf4b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Class\UClass">
+      <UniqueIdentifier>{342bc16e-998a-4bb0-994f-a33753cfac5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Class\UWorld">
+      <UniqueIdentifier>{810a11e8-8015-41ca-8f65-3e5ad71531e4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -75,6 +84,12 @@
     <ClInclude Include="Mgr\SpriteSheet.h">
       <Filter>소스 파일\Mgr\DrawFactory</Filter>
     </ClInclude>
+    <ClInclude Include="Class\UClass\UClass.h">
+      <Filter>소스 파일\Class\UClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\UWorld\UWorld.h">
+      <Filter>소스 파일\Class\UWorld</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Blog-Project.cpp">
@@ -103,6 +118,12 @@
     </ClCompile>
     <ClCompile Include="Mgr\SpriteSheet.cpp">
       <Filter>소스 파일\Mgr\DrawFactory</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\UClass\UClass.cpp">
+      <Filter>소스 파일\Class\UClass</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\UWorld\UWorld.cpp">
+      <Filter>소스 파일\Class\UWorld</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -61,11 +61,9 @@ void SpriteSheet::Draw(float _deltaTime)
 {
 	if (iMaxFrame > 0)
 	{
-		int iX = iFrame % iMaxFrame;
-
-		fImageX = iX * fImageWidth;
+		fImageX = iFrame * fImageWidth;
 		fImageY = iAction * fImageHeight;
-		
+
 		D2DRenderTarget->DrawBitmap(bmp, D2D1::RectF(Location.x, Location.y, Location.x + Size.x, Location.y + Size.y),
 			1, D2D1_BITMAP_INTERPOLATION_MODE::D2D1_BITMAP_INTERPOLATION_MODE_NEAREST_NEIGHBOR,
 			D2D1::RectF(

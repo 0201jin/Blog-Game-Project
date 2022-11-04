@@ -1,2 +1,9 @@
-﻿  MainState.cpp
+﻿  Main.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+  SpriteSheet.cpp
+C:\Users\0201j\Desktop\블로그 프로젝트\Blog-Game-Project\Blog-Project\Blog-Project\Mgr\SpriteSheet.cpp(76,23): warning C4244: '=': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  UDrawFactory.cpp
+  MainState.cpp
+  코드를 생성하고 있습니다...
+  LINK : C:\Users\0201j\Desktop\블로그 프로젝트\Blog-Game-Project\Blog-Project\x64\Debug\Blog-Project.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
   Blog-Project.vcxproj -> C:\Users\0201j\Desktop\블로그 프로젝트\Blog-Game-Project\Blog-Project\x64\Debug\Blog-Project.exe
