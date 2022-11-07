@@ -36,6 +36,52 @@ bool UInputMgr::Frame()
 	return true;
 }
 
+bool UInputMgr::GetKeyInput(BYTE key)
+{
+	ReadKeyboard();
+
+	return keyBoardState[key] ? true : false;
+}
+
+bool UInputMgr::GetKeyPress(BYTE key)
+{
+	ReadKeyboard();
+
+	if (keyBoardState[key] && !bCheckKeyBoardState[key])
+	{
+		bCheckKeyBoardState[key] = true;
+
+		return true;
+	}
+	else if (bCheckKeyBoardState[key])
+		KeyBoard->GetDeviceState(sizeof(bCheckKeyBoardState), bCheckKeyBoardState);
+
+	return false;
+}
+
+bool UInputMgr::GetPressAnyKey()
+{
+	ReadKeyboard();
+
+	for (int i = 0; i < 256; i++)
+		if (keyBoardState[i])
+		{
+			if (!bCheckKeyBoardState[i])
+			{
+				bCheckKeyBoardState[i] = true;
+				return true;
+			}
+		}
+		else if (bCheckKeyBoardState[i])
+		{
+			KeyBoard->GetDeviceState(sizeof(bCheckKeyBoardState), bCheckKeyBoardState);
+			break;
+		}
+
+	return false;
+}
+
+
 void UInputMgr::GetMouseMove(float& _X, float& _Y)
 {
 	_X = MouseMoveX;
@@ -56,6 +102,24 @@ bool UInputMgr::ReadMouse()
 		{
 			return false;
 		}
+	}
+
+	return true;
+}
+
+bool UInputMgr::ReadKeyboard()
+{
+	ZeroMemory(keyBoardState, sizeof(keyBoardState));
+
+	HRESULT m_hr = KeyBoard->GetDeviceState(sizeof(keyBoardState), keyBoardState);
+
+	if (FAILED(m_hr))
+	{
+		m_hr = KeyBoard->Acquire();
+		while (m_hr == DIERR_INPUTLOST)
+			KeyBoard->Acquire();
+
+		return false;
 	}
 
 	return true;

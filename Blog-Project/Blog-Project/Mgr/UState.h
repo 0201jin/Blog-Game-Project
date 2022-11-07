@@ -1,4 +1,10 @@
 #pragma once
+#include <iostream>
+
+#include "../Mgr/UInputMgr.h"
+
+using namespace std;
+
 class UState
 {
 public:
@@ -9,5 +15,8 @@ public:
 
 	virtual void Update(float _deltaTime);
 	virtual void Redner(float _deltaTime);
+
+protected:
+	UInputMgr* InputMgr;
 };
 

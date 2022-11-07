@@ -29,7 +29,6 @@ Main::~Main()
 
 void Main::Update(float _deltaTime)
 {
-	InputMgr->Frame();
 	StateMgr->Update(_deltaTime);
 }
 

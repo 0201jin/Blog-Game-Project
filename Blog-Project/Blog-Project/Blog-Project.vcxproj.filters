@@ -43,6 +43,12 @@
     <Filter Include="소스 파일\Class\UWorld">
       <UniqueIdentifier>{810a11e8-8015-41ca-8f65-3e5ad71531e4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\State\InGame">
+      <UniqueIdentifier>{c61d50c2-b24f-40da-b52f-758c49ca109a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Class\Actor">
+      <UniqueIdentifier>{c4a4f846-fe89-4a1e-8e95-6a051c5f17ed}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -90,6 +96,12 @@
     <ClInclude Include="Class\UWorld\UWorld.h">
       <Filter>소스 파일\Class\UWorld</Filter>
     </ClInclude>
+    <ClInclude Include="State\InGame.h">
+      <Filter>소스 파일\State\InGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Actor\Actor.h">
+      <Filter>소스 파일\Class\Actor</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Blog-Project.cpp">
@@ -124,6 +136,12 @@
     </ClCompile>
     <ClCompile Include="Class\UWorld\UWorld.cpp">
       <Filter>소스 파일\Class\UWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="State\InGame.cpp">
+      <Filter>소스 파일\State\InGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Actor\Actor.cpp">
+      <Filter>소스 파일\Class\Actor</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

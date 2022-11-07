@@ -34,7 +34,12 @@ public:
 
 	void GetMouseMove(float& _X, float& _Y);
 
+	bool GetKeyInput(BYTE key);
+	bool GetKeyPress(BYTE key);
+	bool GetPressAnyKey();
+
 private:
+	bool ReadKeyboard();
 	bool ReadMouse();
 	void ProcessInput();
 
