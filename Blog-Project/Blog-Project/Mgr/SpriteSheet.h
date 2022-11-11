@@ -29,7 +29,23 @@ public:
 		}
 	};
 	
+	void SetRenderType(int _rendertype) { iRenderType = _rendertype; }
 	int GetRenderType() { return iRenderType; }
+
+	void SetLocation(D2D_VECTOR_2F _Lo)
+	{
+		Location = _Lo;
+	}
+	D2D_VECTOR_2F GetLocation()
+	{
+		return Location;
+	}
+
+	void AddLocation(D2D_VECTOR_2F _Lo)
+	{
+		Location.x += _Lo.x;
+		Location.y += _Lo.y;
+	}
 
 private:
 	int iRenderType = 0;

@@ -14,7 +14,7 @@ public:
 	virtual void Init();
 
 	virtual void Update(float _deltaTime);
-	virtual void Redner(float _deltaTime);
+	virtual void Render(float _deltaTime);
 
 protected:
 	UInputMgr* InputMgr;

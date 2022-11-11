@@ -1,2 +1,3 @@
-﻿  UWorld.cpp
+﻿  PlayerController.cpp
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   Blog-Project.vcxproj -> C:\Users\0201j\Desktop\블로그 프로젝트\Blog-Game-Project\Blog-Project\x64\Debug\Blog-Project.exe

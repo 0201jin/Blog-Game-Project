@@ -27,6 +27,6 @@ void MainState::Update(float _deltaTime)
 	}
 }
 
-void MainState::Redner(float _deltaTime)
+void MainState::Render(float _deltaTime)
 {
 }

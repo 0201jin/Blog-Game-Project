@@ -49,6 +49,12 @@
     <Filter Include="소스 파일\Class\Actor">
       <UniqueIdentifier>{c4a4f846-fe89-4a1e-8e95-6a051c5f17ed}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Class\Actor\Character">
+      <UniqueIdentifier>{5f605253-8824-4450-bc09-ba32cb512508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Class\UClass\Controller">
+      <UniqueIdentifier>{9941c290-b797-414f-b63a-72e43b77ab9f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -102,6 +108,12 @@
     <ClInclude Include="Class\Actor\Actor.h">
       <Filter>소스 파일\Class\Actor</Filter>
     </ClInclude>
+    <ClInclude Include="Class\Actor\Character\Character.h">
+      <Filter>소스 파일\Class\Actor\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\UClass\PlayerController\PlayerController.h">
+      <Filter>소스 파일\Class\UClass\Controller</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Blog-Project.cpp">
@@ -142,6 +154,12 @@
     </ClCompile>
     <ClCompile Include="Class\Actor\Actor.cpp">
       <Filter>소스 파일\Class\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Actor\Character\Character.cpp">
+      <Filter>소스 파일\Class\Actor\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\UClass\PlayerController\PlayerController.cpp">
+      <Filter>소스 파일\Class\UClass\Controller</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -18,6 +18,6 @@ void UState::Update(float _deltaTime)
 	InputMgr->Frame();
 }
 
-void UState::Redner(float _deltaTime)
+void UState::Render(float _deltaTime)
 {
 }

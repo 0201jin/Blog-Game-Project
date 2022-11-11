@@ -28,5 +28,5 @@ void UStateMgr::Update(float _deltaTime)
 void UStateMgr::Render(float _deltaTime)
 {
 	if (m_State != nullptr)
-		m_State->Redner(_deltaTime);
+		m_State->Render(_deltaTime);
 }
