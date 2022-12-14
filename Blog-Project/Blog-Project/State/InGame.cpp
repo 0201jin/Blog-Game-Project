@@ -5,7 +5,12 @@ void InGame::Init()
 	__super::Init();
 	world = new UWorld();
 	world->init();
-	world->AddWorldActor(new Character());
+
+	Character* character = new Character();
+	world->AddWorldActor(character);
+	world->SetPlayer(character);
+
+	world->AddWorldActor(new Monster());
 	cout << "InGame State!" << endl;
 }
 

@@ -7,6 +7,10 @@ UResourceMgr::UResourceMgr()
 	ID2D1Bitmap* Texture;
 	LoadTexture(Texture, "Asset/characters/player.png");
 	mTexture["character"] = Texture;
+
+	ID2D1Bitmap* MonsterTexture;
+	LoadTexture(MonsterTexture, "Asset/characters/slime.png");
+	mTexture["monster"] = MonsterTexture;
 }
 
 UResourceMgr::~UResourceMgr()

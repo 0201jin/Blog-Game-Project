@@ -20,4 +20,5 @@ void Character::Update(float _deltaTime)
 	Controller->Update(_deltaTime);
 
 	Spritesheet->AddLocation(Controller->GetVector());
+	Location = Spritesheet->GetLocation();
 }

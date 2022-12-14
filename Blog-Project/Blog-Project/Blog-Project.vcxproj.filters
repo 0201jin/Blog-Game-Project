@@ -55,6 +55,9 @@
     <Filter Include="소스 파일\Class\UClass\Controller">
       <UniqueIdentifier>{9941c290-b797-414f-b63a-72e43b77ab9f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Class\Actor\Monster">
+      <UniqueIdentifier>{92a07a3e-ddde-4d87-aa83-e1c78609d665}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -114,6 +117,9 @@
     <ClInclude Include="Class\UClass\PlayerController\PlayerController.h">
       <Filter>소스 파일\Class\UClass\Controller</Filter>
     </ClInclude>
+    <ClInclude Include="Class\Actor\Monster\Monster.h">
+      <Filter>소스 파일\Class\Actor\Monster</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Blog-Project.cpp">
@@ -160,6 +166,9 @@
     </ClCompile>
     <ClCompile Include="Class\UClass\PlayerController\PlayerController.cpp">
       <Filter>소스 파일\Class\UClass\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Actor\Monster\Monster.cpp">
+      <Filter>소스 파일\Class\Actor\Monster</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

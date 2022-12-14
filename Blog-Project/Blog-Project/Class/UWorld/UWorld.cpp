@@ -31,11 +31,14 @@ void UWorld::Update(float _deltaTime)
 	}
 }
 
-void UWorld::AddWorldActor(Actor* _actor)
+Actor* UWorld::AddWorldActor(Actor* _actor)
 {
 	_actor->init();
 	vWorldActors.push_back(_actor);
 	DrawFactory->AddSprite(_actor->GetSprite());
+	_actor->SetWorld(this);
+
+	return _actor;
 }
 
 void UWorld::DelWorldActor(Actor* _actor)

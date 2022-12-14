@@ -130,6 +130,7 @@
     <ClInclude Include="Blog-Project.h" />
     <ClInclude Include="Class\Actor\Actor.h" />
     <ClInclude Include="Class\Actor\Character\Character.h" />
+    <ClInclude Include="Class\Actor\Monster\Monster.h" />
     <ClInclude Include="Class\UClass\PlayerController\PlayerController.h" />
     <ClInclude Include="Class\UClass\UClass.h" />
     <ClInclude Include="Class\UWorld\UWorld.h" />
@@ -151,6 +152,7 @@
     <ClCompile Include="Blog-Project.cpp" />
     <ClCompile Include="Class\Actor\Actor.cpp" />
     <ClCompile Include="Class\Actor\Character\Character.cpp" />
+    <ClCompile Include="Class\Actor\Monster\Monster.cpp" />
     <ClCompile Include="Class\UClass\PlayerController\PlayerController.cpp" />
     <ClCompile Include="Class\UClass\UClass.cpp" />
     <ClCompile Include="Class\UWorld\UWorld.cpp" />
