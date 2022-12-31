@@ -16,8 +16,12 @@ Main::Main(HWND _hwnd, HINSTANCE _hInst)
 
 	ResourceMgr = UResourceMgr::GetInst();
 
+	RECT rc;
+	GetClientRect(hWnd, &rc);
+	D2D1_SIZE_U size = D2D1::SizeU(rc.right - rc.left, rc.bottom - rc.top);
+
 	InputMgr = UInputMgr::GetInst();
-	InputMgr->Init(_hInst, _hwnd, 1270, 720);
+	InputMgr->Init(_hInst, _hwnd, size.width, size.height);
 
 	StateMgr = UStateMgr::GetInst();
 	StateMgr->SetState(new MainState);

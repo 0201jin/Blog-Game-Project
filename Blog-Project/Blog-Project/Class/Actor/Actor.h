@@ -10,6 +10,8 @@ public:
 	virtual void Render(float _deltaTime);
 	virtual void Update(float _deltaTime);
 
+	virtual void Attacked();
+
 	void SetLoctaion(D2D_VECTOR_2F _Lo)
 	{
 		Location = _Lo;
@@ -38,7 +40,12 @@ public:
 	UWorld* GetWorld() { return world; }
 	void SetWorld(UWorld* _world) { world = _world; }
 
+	int GetType() { return type; }
+
 protected:
+	int iHealth = 100;
+	int type = 0;
+	
 	D2D_VECTOR_2F Location;
 	D2D_VECTOR_2F Scale;
 	SpriteSheet* Spritesheet;

@@ -22,6 +22,8 @@ public:
 	Actor* GetPlayer() { return Player; }
 	void SetPlayer(Actor* _Player) { Player = _Player; }
 
+	vector<Actor*> GetWorldActors() { return vWorldActors; }
+
 protected:
 	vector<Actor*> vWorldActors;
 

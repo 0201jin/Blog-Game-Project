@@ -29,4 +29,6 @@ void PlayerController::Update(float _deltaTime)
 	{
 		Vector.y += 100 * _deltaTime;
 	}
+
+	bLeftButtonClick = InputMgr->GetMouseInput(ButtonEnum::Left);
 }

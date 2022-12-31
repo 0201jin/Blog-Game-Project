@@ -14,16 +14,16 @@ UDrawFactory::~UDrawFactory()
 
 void UDrawFactory::Render(float _deltaTime)
 {
-	for (vector<SpriteSheet*>::iterator it = vSpriteSheet.begin(); it != vSpriteSheet.end(); it++)
+	for (int i = 0; i < vSpriteSheet.size(); ++i)
 	{
-		switch ((*it)->GetRenderType())
+		switch (vSpriteSheet[i]->GetRenderType())
 		{
 		case 0:
-			(*it)->Draw();
+			vSpriteSheet[i]->Draw();
 			break;
 
 		case 1:
-			(*it)->Draw(_deltaTime);
+			vSpriteSheet[i]->Draw(_deltaTime);
 			break;
 		}
 	}
@@ -33,4 +33,17 @@ void UDrawFactory::AddSprite(SpriteSheet* _sprite)
 {
 	if (_sprite)
 		vSpriteSheet.push_back(_sprite);
+}
+
+void UDrawFactory::DelSprite(SpriteSheet* _sprite)
+{
+	for (vector<SpriteSheet*>::iterator it = vSpriteSheet.begin(); it != vSpriteSheet.end(); it++)
+	{
+		if ((*it) == _sprite)
+		{
+			vSpriteSheet.erase(it);
+			delete(_sprite);
+			return;
+		}
+	}
 }

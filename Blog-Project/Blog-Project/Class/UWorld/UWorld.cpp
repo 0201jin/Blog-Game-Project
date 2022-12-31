@@ -25,9 +25,9 @@ void UWorld::Render(float _deltaTime)
 
 void UWorld::Update(float _deltaTime)
 {
-	for (vector<Actor*>::iterator iter = vWorldActors.begin(); iter != vWorldActors.end(); iter++)
+	for(int i = 0; i < vWorldActors.size(); ++i)
 	{
-		(*iter)->Update(_deltaTime);
+		vWorldActors[i]->Update(_deltaTime);
 	}
 }
 
@@ -45,6 +45,11 @@ void UWorld::DelWorldActor(Actor* _actor)
 {
 	for (vector<Actor*>::iterator iter = vWorldActors.begin(); iter != vWorldActors.end(); iter++)
 	{
-		vWorldActors.erase(iter);
+		if ((*iter) == _actor)
+		{
+			DrawFactory->DelSprite((*iter)->GetSprite());
+			vWorldActors.erase(iter);
+			return;
+		}
 	}
 }

@@ -33,6 +33,8 @@ public:
 	bool Frame();
 
 	void GetMouseMove(float& _X, float& _Y);
+	bool GetMouseInput(ButtonEnum _Enum);
+	void GetMousePos(float& _X, float& _Y);
 
 	bool GetKeyInput(BYTE key);
 	bool GetKeyPress(BYTE key);

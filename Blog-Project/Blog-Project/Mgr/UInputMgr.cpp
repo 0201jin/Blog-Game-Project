@@ -1,4 +1,5 @@
 #include "UInputMgr.h"
+#include "../ExternHeader.h"
 
 UInputMgr* UInputMgr::Inst = nullptr;
 
@@ -86,6 +87,23 @@ void UInputMgr::GetMouseMove(float& _X, float& _Y)
 {
 	_X = MouseMoveX;
 	_Y = MouseMoveY;
+}
+
+bool UInputMgr::GetMouseInput(ButtonEnum _Enum)
+{
+	return MouseState.rgbButtons[(int)_Enum] & 0x80 ? true : false;
+}
+
+void UInputMgr::GetMousePos(float& _X, float& _Y)
+{
+	D2D1_MATRIX_3X2_F MTR;
+	D2DRenderTarget->GetTransform(&MTR);
+
+	float SX = MTR.dx;
+	float SY = MTR.dy;
+
+	_X = MouseX - SX;
+	_Y = MouseY - SY;
 }
 
 bool UInputMgr::ReadMouse()

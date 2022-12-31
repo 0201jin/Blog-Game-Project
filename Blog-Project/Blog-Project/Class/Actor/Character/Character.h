@@ -9,6 +9,8 @@ public:
 	virtual void Render(float _deltaTime);
 	virtual void Update(float _deltaTime);
 
+	virtual void Attacked();
+
 	PlayerController* GetPlayerController() { return Controller; }
 
 protected:

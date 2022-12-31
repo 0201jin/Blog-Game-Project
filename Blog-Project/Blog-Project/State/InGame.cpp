@@ -10,7 +10,9 @@ void InGame::Init()
 	world->AddWorldActor(character);
 	world->SetPlayer(character);
 
-	world->AddWorldActor(new Monster());
+	Monster* monster = new Monster();
+	monster->SetLoctaion({300, 300});
+	world->AddWorldActor(monster);
 	cout << "InGame State!" << endl;
 }
 
